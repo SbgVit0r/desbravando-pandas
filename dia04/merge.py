@@ -25,3 +25,7 @@ df_transaction
 # %%
 df_transaction.merge(data_users, how='left', left_on='id_user', right_on='Id')
 # %%
+df_transaction.merge(data_users, how='inner', left_on='id_user', right_on='Id')
+# %%
+df_transaction.merge(data_users, how='right', left_on='id_user', right_on='Id')
+# %%
